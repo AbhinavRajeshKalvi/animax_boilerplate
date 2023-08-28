@@ -112,3 +112,52 @@ footer {
 /* Iteration 5: Making webpage mobile responsive */
 
 
+.flex-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.movies{
+    flex-wrap: wrap;
+    margin: 3% 14%;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#scroll{
+    position: relative;
+    animation: arrow 2s infinite;
+}
+
+
+
+@keyframes arrow {
+0%{
+    top: 15px;
+}
+100%{
+    top: 100px;
+}
+}
+
+@media only screen and (max-width:600px){
+    .wrap-reverse{
+        flex-wrap: wrap-reverse;
+    }
+    .container{
+        text-align: center;
+    }
+    #play{
+        background-color: blue;
+    }
+}
+
+@media only screen and (max-width:800px) and (min-width:600px){
+    #play {
+        background-color: rgb(30, 255, 30);
+    }
+}
